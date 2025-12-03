@@ -450,10 +450,10 @@
             src: 'https://kaplanyayin78.canadacentral.cloudapp.azure.com/hls/0/stream.m3u8',
             type: 'application/x-mpegURL'
         });
-
+        
         // Auto-play handler
         player.ready(function() {
-            var promise = player.play();
+           var promise = player.play();
             if (promise !== undefined) {
                 promise.catch(function(error) {
                     console.log('Autoplay prevented:', error);
@@ -475,4 +475,5 @@
         });
     </script>
 </body>
+
 </html>
